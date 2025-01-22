@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHIMBOTE BIKERS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos básicos para la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header nav {
+            margin: 20px 0;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url('tu-imagen-de-fondo.jpg');
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .hero .btn {
+            background-color: #FF6600;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .services, .testimonials, .gallery, .contact {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .service-item {
+            display: inline-block;
+            width: 30%;
+            margin: 15px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>CHIMBOTE BIKERS</h1>
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#services">Servicios</a>
+            <a href="#gallery">Galería</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <div class="hero">
+        <div>
+            <h1>¡El mejor club de ciclismo!</h1>
+            <button class="btn" onclick="window.location.href='#contact'">Reserva Ahora</button>
+        </div>
+    </div>
+
+    <!-- Sobre Nosotros (Servicios) -->
+    <section id="services" class="services">
+        <h2>Servicios de Alquiler</h2>
+        <div class="service-item">
+            <h3>Alquiler por Hora</h3>
+            <p>Disfruta de nuestras bicicletas acuáticas por una hora.</p>
+        </div>
+        <div class="service-item">
+            <h3>Alquiler por Día</h3>
+            <p>Alquila una bicicleta acuática para todo el día y explora el agua.</p>
+        </div>
+        <div class="service-item">
+            <h3>Guía Personalizada</h3>
+            <p>Te ofrecemos un guía para que tengas la mejor experiencia.</p>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="gallery" class="gallery">
+        <h2>Galería</h2>
+        <div class="gallery-container">
+            <!-- Imágenes de ejemplo -->
+            <img src="eclipse.jpg" alt="Bicicletas Acuáticas" style="width: 30%; margin: 10px;">
+            <img src="hola.jpg" alt="Disfrutando el Agua" style="width: 30%; margin: 10px;">
+            <!--img src="tu-imagen-3.jpg" alt="Diversión en el Lago" style="width: 30%; margin: 10px;"-->
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials">
+        <h2>Testimonios</h2>
+        <p>"Una experiencia increíble, muy divertida y fácil de usar." - Juan Pérez</p>
+        <p>"Muy buen servicio, el personal fue muy amable y las bicicletas en perfecto estado." - Ana Gómez</p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Tu nombre" required><br><br>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required><br><br>
+            <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea><br><br>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Alquiler de Bicicletas Acuáticas. Todos los derechos reservados.</p>
+        <p>
+            <a href="#">Política de Privacidad</a> | 
+            <a href="#">Términos y Condiciones</a> | 
+            <a href="#">Síguenos en Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html> que debo hacer para ejecutar
