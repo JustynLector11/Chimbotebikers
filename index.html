@@ -12,8 +12,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-
+        }  
+        
         header {
             background-color: #ff002b;
             color: white;
@@ -37,15 +37,18 @@
         }
 
         .hero {
-            background-image: url('tu-imagen-de-fondo.jpg');
-            background-size: cover;
-            height: 400px;
+            background-image: url('Chb.png'); /* Ruta de tu imagen */
+            background-size: cover; /* Cubre todo el contenedor sin deformarse */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            height: 100vh; /* Ocupa el 100% de la altura del navegador */
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
-            text-align: center;
+            color: white; /* Color del texto dentro de .hero */
+            text-align: center; /* Centra el texto horizontalmente */
         }
+        
 
         .hero h1 {
             font-size: 50px;
@@ -61,7 +64,7 @@
             margin-top: 20px;
         }
 
-        .services, .equipo, .gallery, .contact {
+        .services, .equipo, .gallery, .contact, .testimonials {
             padding: 50px 20px;
             text-align: center;
         }
@@ -97,23 +100,23 @@
             <a href="#home">Inicio</a>
             <a href="#services">Noticias</a>
             <a href="#gallery">Galería</a>
-            <a href="#contact">Contacto</a>
+            <a href="#contact">Siguenos</a>
         </nav>
     </header>
 
     <!-- Sección Principal (Hero) -->
-     <div class="hero">
+    <div class="hero">
         <div>
             <h1 style = "color: #333;">¡El mejor club de ciclismo!</h1>
             <!-- button class="btn" onclick="window.location.href='#contact'">Reserva Ahora</button-->
         </div>
     </div>
-    
+
     <!-- Sobre Nosotros (Servicios) -->
     <section id="services" class="services">
         <h2>Noticias</h2>
         <div class="Novedades">
-            <h3>Nuevos Integrantes</h3>
+            <h3>Entrenamiento Semanal</h3>
             <p>"que chucha pongo?"</p>
         </div>
         </section>
@@ -121,7 +124,7 @@
     <section id="equipo" class="equipo">
         <h2>Equipo</h2>
         <div class=" HOLA ">
-            
+            <h3>Pablito vuelve a ser presidente</h3>
         </div>
     </section>
 
@@ -136,12 +139,12 @@
         </div>
     </section>
 
-    <!-- Testimonios -->
+    <!-- Testimonios
     <section class="testimonials">
         <h2>Testimonios</h2>
         <p>"Una experiencia increíble, muy divertida y fácil de usar." - Juan Pérez</p>
         <p>"Muy buen servicio, el personal fue muy amable y las bicicletas en perfecto estado." - Ana Gómez</p>
-    </section>
+    </section> -->
 
     <!-- Contacto -->
 <section id="contact" class="contact">
@@ -149,10 +152,10 @@
     <div class="social-links">
         <h3>Síguenos en nuestras redes sociales:</h3>
         <a href="https://www.facebook.com/ChimboteBikers" target="_blank" class="social-icon">
-            <img src="facebook-icon.png" alt="Facebook">
+            <img src="imagenes/facebook.png" alt="Facebook" width="40" height="40">
         </a>
         <a href="https://www.instagram.com/chimbotebikers?igsh=cnBsMjRqZzlmeXIz" target="_blank" class="social-icon">
-            <img src="instagram-icon.png" alt="Instagram">
+            <img src="imagenes/instagram.png" alt="Instagram" width="40" height="40">
         </a>
     </div>
 </section>
