@@ -170,6 +170,31 @@
             <a href="#">Síguenos en Instagram</a>
         </p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let modal = document.getElementById("modal");
+            let modalImg = document.getElementById("img-ampliada");
+            let images = document.querySelectorAll(".gallery-container img");
+            let close = document.querySelector(".close");
+    
+            images.forEach(img => {
+                img.addEventListener("click", function () {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                });
+            });
+    
+            close.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+    
+            modal.addEventListener("click", function (e) {
+                if (e.target !== modalImg) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
